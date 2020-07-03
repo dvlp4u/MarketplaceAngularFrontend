@@ -1,0 +1,31 @@
+
+.container-fluid{
+    padding-top: 100px;
+    height: 100%;
+    position: relative;
+    overflow: scroll;
+}
+
+#base-card-div {
+    position: relative;
+}
+
+#riga-carta{
+    position: relative;
+}
+
+img {
+   width: 100%;
+}
+
+#card-body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+
+#back-button{
+    position: relative;
+    margin-top: 30px;
+}

@@ -1,0 +1,26 @@
+
+<div class="container-fluid">
+
+  <div class="form-group">
+      <input type="text" [(ngModel)]="filtro" class="form-control" placeholder="Ricerca prodotto" style="max-width: 30vw; position: fixed; z-index: 6; top: 5px; right: 100px;"/>
+  </div>
+
+  <div class="row">
+
+    <div class="col-lg-3 col-sm-6 p-3" *ngFor="let prodotto of prodotti | filtroProdotti:filtro" id="base-card-div" >
+      <!--start card-->
+      <div class="card" id="card-div">
+        
+        <img class="card-img-top" src="http://localhost:8080/view/image/{{prodotto.nome}}.jpg" alt="{{prodotto.nome}}">
+       
+        <div class="card-body" style="max-width: 100%; max-height: 50%">
+          <h4 class="card-title">{{prodotto.nome}}</h4>
+          <p class="card-text">{{prodotto.descrizione}}</p>
+          <a routerLink="dettaglio-prodotto/{{prodotto.id}}" class="btn btn-primary">See Profile</a>
+        </div>
+
+      </div>
+      <!--end card-->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div id="utenti-div" class="col-md-8 offset-1">
+    <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nome</th>
+      <th>Password</th>
+      <th>Ruolo</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let utente of utenti">
+            <td>{{utente.id}}</td>
+            <td>{{utente.nick}}</td>
+            <td>{{utente.password}}</td>
+            <td>{{utente.role}}</td>
+        </tr>
+    </tbody>
+      </table>
+  
+</div>

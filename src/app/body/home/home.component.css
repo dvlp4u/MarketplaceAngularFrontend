@@ -1,0 +1,70 @@
+#home-img {
+    position: relative;
+    width: 100%;
+    background-image: url("/assets/img/sky.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+#search-bar {
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 48%;
+    width: 40vw;
+    border-radius: 10px;
+    background-color: transparent;
+    padding-left: 30px;
+    text-align: left;
+    color: black;
+}
+
+button {
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 48%;
+    border-radius: 10px;
+    background-color: rgb(204, 196, 224);
+    opacity: 0.7;
+    text-align: center;
+    color: blue;
+}
+
+#search-bar::placeholder{
+    color: rgb(15, 15, 82);    
+}
+
+@media screen and (max-width: 720px) { 
+    #search-bar {
+        display: block;
+        position: relative;
+        top: 50%;
+        left: 10%;
+        width: 80vw;
+        border-radius: 10px;
+        background-color: transparent;
+        padding-left: 10px;
+        opacity: 0.7;
+        text-align: left;
+        color: white;
+    }
+    #search-bar::placeholder{
+        color: white;   
+        font-size: small; 
+    }
+ }
+
+h1 {
+    display: block;
+    text-align: right;
+    padding-right: 10%;
+    position: relative;
+    top: 50%;
+    font-size: 12vw;
+    color: lightskyblue;
+    font-family: serif;
+    font-style: oblique;
+    
+}

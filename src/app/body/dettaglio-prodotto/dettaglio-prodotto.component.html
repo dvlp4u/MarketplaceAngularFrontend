@@ -1,0 +1,24 @@
+<div class="container-fluid">
+
+    <div class="row">
+  
+      <div class="col-md-10 offset-1" id="base-card-div">
+
+        <div class="row" id="riga-carta">
+
+         <div class="col-md-7">
+          <img src="http://localhost:8080/view/image/{{prodotto.nome}}.jpg" alt="{{prodotto.nome}}">
+         </div> 
+
+          <div class="col-md-5 p-2" id="card-body">
+            <h4 class="card-title">{{prodotto.nome}}</h4>
+            <p class="card-text">{{prodotto.descrizione}}</p>
+            <a routerLink="/prodotti" class="btn btn-primary" id="back-button">Back</a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+</div>

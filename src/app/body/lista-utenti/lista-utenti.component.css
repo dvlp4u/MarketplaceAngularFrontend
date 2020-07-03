@@ -1,0 +1,12 @@
+#utenti-div {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+table {
+    position: relative;
+    overflow: auto;
+}

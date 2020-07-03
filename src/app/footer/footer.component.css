@@ -1,0 +1,15 @@
+p {
+    color: gray;
+    background-color: lightgrey;
+    font-size: medium;
+    font-family: fantasy;
+    position: fixed;
+    width: fit-content;
+    bottom: 1px;
+    right: 1px;
+    padding: 5px;
+    padding-right: 15px;
+    margin: 0px;
+    z-index: 5;
+    height: fit-content;
+}
