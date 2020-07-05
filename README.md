@@ -2,26 +2,24 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
-## Development server
+Il progetto è un integrazione al progetto "Marketplace" per gestire la parte frontend attraverso un Angular e consumare i dati tramite servizio REST.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Installazione progetto
 
-## Code scaffolding
+1 - Prima di tutto assicurarsi di avere scaricato e seguito le istruzione del progetto Marketplace presente al seguente indirizzo "https://github.com/dvlp4u/marketplace".
+2 - Scaricare il file Zip di questo progetto e unzipparlo in una cartella a scelta del proprio dispositivo.
+3 - Scaricare un IDE per Angular secondo preferenza, io utilizzero Visual Studio Code(VSC). Per scaricarlo e installarlo andare sul sito "https://code.visualstudio.com/", selezionare la voce download e seguire le procedure di installazione in base al vostro sistema operativo.
+4 - Una volta installato, scarichiamo ed installiamo Angular, seguendo le istruzioni riportate all'indirizzo "https://angular.io/guide/setup-local". (non dimentichiamo di installare anche node.js, come indicato nel sito di angular e Angular-cli).
+5 - Ora apriamo VSC e trasciniamo dentro ad esso la cartella del progetto che avevamo dezippato in precedenza.
+6 - Successivamente apriamo una nuova finestra del terminale (CTRL+SHIFT+ò) e collochiamoci nella cartella del progetto "MarketplaceAngularFrontend". 
+7 - Digitiamo il comando "npm install" e attendiamo qualche minuto che l'istallazione sia terminata.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Utilizzo dell'applicazione
 
-## Build
+Possiamo utilizzaere l'applicazione dopo aver seguito i passi per l'installazione, digitando nel terminale il comando "ng serve --open" che automaticamente farà partire l'applicazione e ci aprirà il browser predefinito.
+Per consumare i dati dal server bisognerà aver fatto partire anche il progetto "Marketplace" e il database "Mysql" come indicato nel file README diponibile all'indirizzo "https://github.com/dvlp4u/marketplace".
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+L'applicazione non è ancora completa, al momento sono disponibili solo le sezione di visualizzazione Utenti e Prodotti (filtrati oer nome o categoria).
+Non è ancora possibile aggiungere, modificare e cancellare Utenti e prodotti dal database.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
