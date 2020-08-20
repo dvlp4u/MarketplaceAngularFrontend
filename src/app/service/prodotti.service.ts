@@ -11,14 +11,14 @@ export class ProdottiService {
   constructor(private http : HttpClient) { }
 
   getProdotti() : Observable<Prodotto[]>{
-    return this.http.get<Prodotto[]>("http://localhost:8080/rest/prodotti");
+    return this.http.get<Prodotto[]>("http://localhost:8080/Marketplace-1.0/rest/prodotti");
   }
 
   getDettaglioProdotto(id : number) : Observable<Prodotto>{
-    return this.http.get<Prodotto>("http://localhost:8080/rest/prodotti/"+id);
+    return this.http.get<Prodotto>("http://localhost:8080/Marketplace-1.0/rest/prodotti/"+id);
   }
 
   getProdottoByCategory(category : string) : Observable<Prodotto[]>{
-    return this.http.get<Prodotto[]>("http://localhost:8080/rest/prodotti/category/"+category);
+    return this.http.get<Prodotto[]>("http://localhost:8080/Marketplace-1.0/rest/prodotti/category/"+category);
   }
 }

@@ -11,6 +11,6 @@ export class UtentiService {
   constructor(private http : HttpClient) { }
 
   getUtenti() : Observable<Utente[]>{
-    return this.http.get<Utente[]>("http://localhost:8080/rest/utenti");
+    return this.http.get<Utente[]>("http://localhost:8080/Marketplace-1.0/rest/utenti");
   }
 }
